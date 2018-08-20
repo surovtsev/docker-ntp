@@ -22,7 +22,7 @@ Pull and run -- it's this simple.
 
 ```
 # pull from docker hub
-$> docker pull cturra/ntp
+$> docker pull fabit/ntp
 
 # run ntp
 $> docker run --name=ntp             \
@@ -32,7 +32,7 @@ $> docker run --name=ntp             \
               --cap-add=SYS_NICE     \
               --cap-add=SYS_RESOURCE \
               --cap-add=SYS_TIME     \
-              cturra/ntp
+              fabit/ntp
 ```
 
 

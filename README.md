@@ -9,11 +9,12 @@ This container runs [OpenNTPD](http://www.openntpd.org/index.html) on [Alpine Li
   http://www.ntp.org
   
 Default config has ntp servers from http://www.vniiftri.ru/ru/uslugi-serverov
+```
 ntp1.vniiftri.ru
 ntp2.vniiftri.ru
 ntp3.vniiftri.ru
 ntp4.vniiftri.ru
-
+```
 
 Running from Docker Hub
 ---

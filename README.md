@@ -1,13 +1,20 @@
 About this container
 ---
-[![Docker Build Status](https://img.shields.io/docker/build/cturra/ntp.svg)](https://hub.docker.com/r/cturra/ntp/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/cturra/ntp.svg)](https://hub.docker.com/r/cturra/ntp/)
-[![Apache licensed](https://img.shields.io/badge/license-Apache-blue.svg)](https://raw.githubusercontent.com/cturra/docker-ntp/master/LICENSE)
+[![Docker Build Status](https://img.shields.io/docker/build/fabit/ntp.svg)](https://hub.docker.com/r/fabit/ntp/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/fabit/ntp.svg)](https://hub.docker.com/r/fabit/ntp/)
+[![Apache licensed](https://img.shields.io/badge/license-Apache-blue.svg)](https://raw.githubusercontent.com/surovtsev/docker-ntp/master/LICENSE)
 
 This container runs [OpenNTPD](http://www.openntpd.org/index.html) on [Alpine Linux](https://alpinelinux.org/). More about NTP can be found at:
 
   http://www.ntp.org
-
+  
+Default config has ntp servers from http://www.vniiftri.ru/ru/uslugi-serverov
+```
+ntp1.vniiftri.ru
+ntp2.vniiftri.ru
+ntp3.vniiftri.ru
+ntp4.vniiftri.ru
+```
 
 Running from Docker Hub
 ---
@@ -15,7 +22,7 @@ Pull and run -- it's this simple.
 
 ```
 # pull from docker hub
-$> docker pull cturra/ntp
+$> docker pull fabit/ntp
 
 # run ntp
 $> docker run --name=ntp             \
@@ -25,7 +32,7 @@ $> docker run --name=ntp             \
               --cap-add=SYS_NICE     \
               --cap-add=SYS_RESOURCE \
               --cap-add=SYS_TIME     \
-              cturra/ntp
+              fabit/ntp
 ```
 
 
